@@ -158,12 +158,11 @@ header p {
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
-        margin: 20px 0;
     }
     .rating div {
         flex-wrap: nowrap;
         width: 450px;
-        padding: 20px 0 15px 30px;
+        padding: 15px 0 15px 30px;
         border-radius: 10px;
     }
     .rating div .rating-paragraph {
@@ -233,7 +232,6 @@ header p {
         align-self: flex-end;
     }
     .opinions {
-        margin: 50px 0;
         padding: 5% 0;
         height: 55%;
         width: 100%;
