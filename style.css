@@ -16,9 +16,9 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile);
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat, no-repeat;
-    /* background-position: right 50vw bottom 60vh, left 20vw top 20vh; */
+    background-position: left 0vw top 0vh, right 0vw bottom 0vh;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
 }
@@ -123,7 +123,6 @@ header p {
 
 @media all and (min-width: 480px) {
     body {
-        height: 100vh;
         display: flex;
         flex-direction: unset;
         align-items: center;
@@ -132,10 +131,61 @@ header p {
         background-repeat: no-repeat, no-repeat;
     }
     .container {
+        height: 100vh;
         width: 80%;
         margin: 0;
     }
 }
+
+@media all and (min-width: 768px){
+
+    .container {
+        height: 100vh;
+        width: 60%;
+        margin: 0;
+    }
+}
+@media all and (min-width: 1024px){
+
+    .container {
+        height: 100vh;
+        width: 40%;
+        margin: 0;
+    }
+    .rating {
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+    .rating div {
+        flex-wrap: nowrap;
+        width: 450px;
+        padding: 20px 0 15px 30px;
+        border-radius: 10px;
+    }
+    .rating div .rating-paragraph {
+        display: block;
+        width: 65%;
+    }
+    .rating div .stars {
+        width: 30%;
+        display: block;
+        width: 35%;
+    }
+    .reviews {
+        align-self: center;
+    }
+    .guru {
+        align-self: center;
+    }
+    .best-tech {
+        align-self: center;
+    }
+}
+
 
 @media all and (min-width: 1440px) {
     body {
@@ -144,10 +194,13 @@ header p {
         flex-direction: unset;
         align-items: center;
         justify-content: center;
-        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop);
+        background-image: url(./images/bg-pattern-top-desktop.svg), 
+        url(./images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat, no-repeat;
+        background-position: left 0vw top 0vh, right 0vw bottom 0vh;
     }
     .container {
+        margin-top: 50px;
         width: 77%;
         height: 72.5%;
         display: flex;
@@ -167,28 +220,9 @@ header p {
         margin: 0 8% 0 0;
     }
     .rating {
-        flex-wrap: nowrap;
         width: 50%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0;
     }
-    .rating div {
-        flex-wrap: nowrap;
-        width: 450px;
-        padding: 20px 0 15px 30px;
-        border-radius: 10px;
-    }
-    .rating div .rating-paragraph {
-        display: block;
-        width: 65%;
-    }
-    .rating div .stars {
-        width: 30%;
-        display: block;
-        width: 35%;
-    }
+   
     .reviews {
         align-self: flex-start;
     }
@@ -199,7 +233,7 @@ header p {
         align-self: flex-end;
     }
     .opinions {
-        margin: 0;
+        margin: 50px 0;
         padding: 5% 0;
         height: 55%;
         width: 100%;
